@@ -13,5 +13,6 @@ DONE
 <?php
 @unlink(__DIR__."/bug71488.test");
 ?>
---EXPECT--
-DONE
+--EXPECTF--
+Fatal error: Uncaught exception 'BadMethodCallException' with message 'tar-based phar "%s/bug71488.test" cannot be created, link "%s" is too long for format' in %s/bug71488.php:%d
+Stack trace:%A
