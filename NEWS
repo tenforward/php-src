@@ -2,6 +2,15 @@ PHP                                                                        NEWS
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ?? ??? 2019, PHP 5.6.41
 
+- EXIF:
+  . Fixed bug #77753 (Heap-buffer-overflow in php_ifd_get32s). (Stas)
+  . Fixed bug #77831 (Heap-buffer-overflow in exif_iif_add_value). (Stas)
+
+- SQLite3:
+  . Added sqlite3.defensive INI directive. (BohwaZ)
+
+07 Mar 2019, PHP 7.1.27
+
 - Core:
   . Fixed bug #77630 (rename() across the device may allow unwanted access during
     processing). (Stas)
