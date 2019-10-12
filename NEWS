@@ -1,6 +1,23 @@
 PHP                                                                        NEWS
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-Backported from 7.1.31
+?? ??? ????, PHP 7.1.33
+
+- FPM:
+  . Fixed bug #78599 (env_path_info underflow in fpm_main.c can lead to RCE).
+    (CVE-2019-11043) (Jakub Zelenka)
+
+29 Aug 2019, PHP 7.1.32
+
+- mbstring:
+  . Fixed CVE-2019-13224 (don't allow different encodings for onig_new_deluxe) (stas)
+
+- pcre:
+  . Fixed bug #75457 (heap use-after-free in pcrelib) (cmb)
+
+01 Aug 2019, PHP 7.1.31
+
+- SQLite:
+  . Upgraded to SQLite 3.28.0. (cmb)
 
 - EXIF:
   . Fixed bug #78256 (heap-buffer-overflow on exif_process_user_comment).
