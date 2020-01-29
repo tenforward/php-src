@@ -2186,7 +2186,7 @@ its_ok:
 	phar_flush(phar, 0, 0, 1, &error TSRMLS_CC);
 
 	if (error) {
-		zend_hash_str_del(&(PHAR_G(phar_fname_map)), newpath, phar->fname_len);
+		zend_hash_del(&(PHAR_G(phar_fname_map)), newpath, phar->fname_len);
 		*sphar = NULL;
 		zend_throw_exception_ex(spl_ce_BadMethodCallException, 0 TSRMLS_CC, "%s", error);
 		efree(error);
