@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: get devel packages
-      run: apt-get -y install libpng-dev libfreetype6-dev libxpm-dev libbz2-dev libcurl4-openssl-dev libssl-dev libsqlite3-dev zlib1g-dev libpcre3-dev libkrb5-dev libedit-dev libxml2-dev libc-client2007e-dev libsasl2-dev postgresql-server-dev-all unixodbc-dev libsnmp-dev libxslt-dev libjpeg-dev libwebp-dev libgd3
+      run: sudo apt-get -y install libpng-dev libfreetype6-dev libxpm-dev libbz2-dev libcurl4-openssl-dev libssl-dev libsqlite3-dev zlib1g-dev libpcre3-dev libkrb5-dev libedit-dev libxml2-dev libc-client2007e-dev libsasl2-dev postgresql-server-dev-all unixodbc-dev libsnmp-dev libxslt-dev libjpeg-dev libwebp-dev libgd3
 
     - name: configure
       run: ./configure  --prefix=/usr  --sysconfdir=/etc  --with-libdir=lib64  --with-config-file-path=/etc  --with-config-file-scan-dir=/etc/php56.d  --disable-debug  --with-pic  --disable-rpath  --without-pear  --with-freetype-dir=/usr  --with-png-dir=/usr  --with-xpm-dir=/usr  --enable-gd-native-ttf  --without-gdbm  --with-jpeg-dir=/usr  --with-openssl  --with-system-ciphers  --with-pcre-regex  --with-zlib  --with-layout=GNU  --with-kerberos  --with-libxml-dir=/usr  --with-mhash  --libdir=/usr/lib64/php  --enable-pcntl  --enable-opcache  --enable-phpdbg  --with-imap=shared --with-imap-ssl  --enable-mbstring=shared  --enable-mbregex  --with-gd=shared  --with-gmp=shared  --enable-calendar=shared  --enable-bcmath=shared  --with-bz2=shared  --enable-ctype=shared  --enable-dba=shared --with-db4=/usr  --with-tcadb=/usr  --enable-exif=shared  --enable-ftp=shared  --with-gettext=shared
