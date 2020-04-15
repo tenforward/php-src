@@ -18,7 +18,7 @@ jobs:
       with:
         ref: PHP-7.1
     - name: get devel packages
-      run: sudo apt-get -y install libpng-dev libfreetype6-dev libxpm-dev libbz2-dev libcurl4-openssl-dev libssl-dev libsqlite3-dev zlib1g-dev libpcre3-dev libkrb5-dev libedit-dev libxml2-dev libc-client2007e-dev libsasl2-dev postgresql-server-dev-all unixodbc-dev libsnmp-dev libxslt-dev libjpeg-dev libwebp-dev libgd3 re2c bison
+      run: sudo apt-get -y install libpng-dev libfreetype6-dev libxpm-dev libbz2-dev libcurl4-openssl-dev libssl-dev libsqlite3-dev zlib1g-dev libpcre3-dev libkrb5-dev libedit-dev libxml2-dev libc-client2007e-dev libsasl2-dev postgresql-server-dev-all unixodbc-dev libsnmp-dev libxslt-dev libjpeg-dev libwebp-dev libgd3 re2c bison libcurl4-gnutls-dev libcurl4-nss-dev libgdbm-dev
 
     - name: configure
       run: |
